@@ -3,6 +3,14 @@ body {
     background-color: gray;
   }
 
+  a {
+    color: rgb(207, 207, 207);
+  }
+
+  a:visited {
+    color: rgb(207, 207, 207);
+  }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -112,4 +120,33 @@ ul {
 
   .none {
     text-decoration: none;
+  }
+
+  .button-container{
+    display: flex;
+  }
+
+  .button {
+    padding: 15px;
+    margin: 1px;
+    margin-right: 5px;
+    display: block;
+    background-color: gray;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .button-dis {
+    padding: 15px;
+    margin: 1px;
+    margin-right: 5px;
+    display: block;
+    background-color: gray;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border: none;
+    text-decoration: line-through;
+    font-family: 'Orbitron', sans-serif;
   }
