@@ -149,3 +149,28 @@ ul {
     text-decoration: line-through;
     font-family: 'Orbitron', sans-serif;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgb(0, 17, 80), rgb(0, 59, 28));
+    background-size: 200% 150%;
+    animation: spin 900s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
