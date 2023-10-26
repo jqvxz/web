@@ -1,6 +1,6 @@
 body {
     font-family: 'Orbitron', sans-serif;
-    background-color: gray;
+    background-color: rgb(0, 59, 28);
   }
 
   a {
@@ -158,19 +158,19 @@ ul {
     height: 100%;
     margin: 0;
     overflow: hidden;
+  }
+
+  .bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgb(0, 17, 80), rgb(0, 59, 28));
-    background-size: 200% 150%;
-    animation: spin 900s linear infinite;
-}
+    background: radial-gradient(circle, rgb(0, 17, 80), transparent);
+    background-size: 150% 100%;
+    z-index: -1;
+    display: flex;
+  }
 
-@keyframes spin {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}
+  .content {
+    position: relative;
+    z-index: 1;
+  }
