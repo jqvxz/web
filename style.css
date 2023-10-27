@@ -51,7 +51,7 @@ ul {
   .box-border{
     margin: 10px;
     padding: 2px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(207, 207, 207);
     background-color: transparent;
   }
 
@@ -84,9 +84,9 @@ ul {
     display: inline-block;
     margin: 10px;
     padding: 20px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(207, 207, 207);
     background-color: transparent;
-    color: black;
+    color: rgb(207, 207, 207);
     transition: 0.3s ease;
     font-size: larger;
   }
@@ -101,7 +101,7 @@ ul {
     display: inline-flex;
     margin: 10px;
     padding: 2px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(207, 207, 207);
     background-color: transparent;
     justify-content: center;
     align-items: center;
