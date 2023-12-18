@@ -1,0 +1,33 @@
+/* CSS to manage mobile style of elements in home.html */
+
+@media screen and (max-width: 767px) {
+
+    .intro-text {
+        display: none; 
+    }
+
+    .display-container {
+        display: none; 
+    }
+
+
+    .content-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    .intro-text-stack {
+        display: none; 
+    }
+
+    .display-container-stack {
+        display: none; 
+    }
+
+
+    .content-box-2 {
+        display: none;
+    }
+}

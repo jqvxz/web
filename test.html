@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device and Geolocation Information</title>
+</head>
+<body>
+
+    <h1>Device and Geolocation Information</h1>
+
+    <button onclick="collectInformation()">Collect Information</button>
+
+    <p id="geolocation"></p>
+    <p id="deviceInfo"></p>
+    <p id="screenResolution"></p>
+
+    <script>
+        function collectInformation() {
+            // Geolocation with higher accuracy
+            if (navigator.geolocation) {
+                var options = {
+                    enableHighAccuracy: true,
+                    timeout: 10000,  // 5 seconds timeout
+                    maximumAge: 0   // Do not use a cached position
+                };
+
+                navigator.geolocation.getCurrentPosition(showPosition, showError, options);
+            } else {
+                document.getElementById("geolocation").innerHTML = "Geolocation is not supported by this browser.";
+            }
+
+            // Device Information
+            var deviceInfo = "Device Name: " + navigator.userAgent + "<br>";
+            deviceInfo += "Device Type: " + getDeviceType() + "<br>";
+            document.getElementById("deviceInfo").innerHTML = deviceInfo;
+
+            // Screen Resolution
+            var screenResolution = "Screen Resolution: " + window.screen.width + " x " + window.screen.height;
+            document.getElementById("screenResolution").innerHTML = screenResolution;
+
+            // Time of Visit
+            var timeOfVisit = "Time of Visit: " + new Date().toLocaleString() + "<br>";
+            document.getElementById("deviceInfo").innerHTML += timeOfVisit;
+
+            // Timezone
+            var timezone = "Timezone: " + Intl.DateTimeFormat().resolvedOptions().timeZone + "<br>";
+            document.getElementById("deviceInfo").innerHTML += timezone;
+
+            // Screen Refresh Rate
+            var refreshRate = "Screen Refresh Rate: " + window.screen.refreshRate + " Hz<br>";
+            document.getElementById("deviceInfo").innerHTML += refreshRate;
+        }
+
+        function showPosition(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            document.getElementById("geolocation").innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+        }
+
+        function showError(error) {
+            document.getElementById("geolocation").innerHTML = "Error getting geolocation: " + error.message;
+        }
+
+        function getDeviceType() {
+            var userAgent = navigator.userAgent;
+            if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                return "iOS Device";
+            } else if (/Android/i.test(userAgent)) {
+                return "Android Device";
+            } else if (/Windows/i.test(userAgent)) {
+                return "Windows Device";
+            } else {
+                return "Other Device";
+            }
+        }
+    </script>
+
+</body>
+</html>

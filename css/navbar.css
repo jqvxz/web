@@ -1,0 +1,41 @@
+/* CSS to manage navbar */
+/* Adding mobile version soon */
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(50, 50, 50);
+  display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+  
+  li {
+  float: left;
+}
+  
+  li a {
+  display: block;
+  color: rgb(207, 207, 207);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: medium;
+}
+
+ul:hover{
+  justify-content: center;
+  border-width: 1px;
+  border-color: red;
+}
+
+@keyframes scale-up-center {
+  0% { transform: scale(0.5); }
+  100% { transform: scale(1); }
+}
+

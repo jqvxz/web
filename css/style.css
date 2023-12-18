@@ -1,0 +1,173 @@
+/* General CSS for all sites */
+
+body {
+    font-family: Arial;
+    background-color: rgb(80, 80, 80);
+}
+
+.content-box {
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 14px;
+    color: rgb(207, 207, 207);
+    font-size: large;
+    display: block;
+}
+
+.content-box-2 {
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 14px;
+    color: rgb(207, 207, 207);
+    font-size: large;
+    display: block;
+}
+
+.intro-text {
+    margin-bottom: 10px;
+}
+
+.intro-text-stack {
+    margin-bottom: 25px;
+}
+
+.display-container {
+    display: flex;
+}
+
+.display-container-stack {
+    display: block;
+}
+
+.display-box {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(207, 207, 207);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: justify;
+    position: relative;
+}
+
+.display-box-heading{
+    text-align: center;
+    color: rgb(207, 207, 207);
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.button{
+    text-align: center;
+    color: rgb(207, 207, 207);
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    background-color: rgb(60, 60, 60);
+    margin-right: 5px;
+}
+
+.button:hover{
+    text-decoration: none;
+    border-color: transparent;
+    transform: scale(110%);
+    background-color: rgb(70, 70, 70);
+}
+
+.popup{
+    border-radius: 10px;
+    border-color: transparent;
+    border-width: 0;
+    background-color: rgb(30, 30, 30);
+    color: rgb(207, 207, 207);
+    font-size: large;
+    max-width: 50%;
+    text-align: justify;
+    animation: enlargeAnimation 0.5s ease-in-out;
+    position: relative;
+}
+
+.popup-color{
+    border-radius: 10px;
+    border-color: transparent;
+    border-width: 0;
+    background-color: rgb(60, 60, 60);
+    color: rgb(207, 207, 207);
+    font-size: large;
+    max-width: 50%;
+    text-align: justify;
+    animation: enlargeAnimation 0.5s ease-in-out;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+}
+
+.online {
+    border-radius: 50%;
+    max-width: 20px;
+    justify-content: center;
+    background-color: green;
+    color: transparent;
+    margin-left: 2px;
+}
+
+.maintenance {
+    border-radius: 50%;
+    max-width: 20px;
+    justify-content: center;
+    background-color: yellow;
+    color: transparent;
+    margin-left: 2px;
+}
+
+.offline{
+    border-radius: 50%;
+    max-width: 20px;
+    justify-content: center;
+    background-color: red;
+    color: transparent;
+    margin-left: 2px;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+}
+
+.status-text {
+    margin-left: 10px; 
+}
+
+@keyframes enlargeAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+

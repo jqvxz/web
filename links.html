@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>::-webkit-scrollbar {display: none;}</style>
+    <title>Website V6 - Links</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <ul>
+        <li> <a href="home.html">Home</a> </li>
+        <li> <a href="home.html">News</a> </li>
+        <li> <a href="links.html">Links</a> </li>
+        <li> <a href="uptime.html">Uptime</a> </li>
+        <li> <a href="about.html">About</a> </li>
+    </ul>
+
+        <div class="content-box">
+            <div class="intro-text-stack">
+                <p>Welcome to Website V6</p>
+            </div>
+            <div class="display-container-stack">
+
+                <div class="display-box">
+                    <span class="material-symbols-outlined">captive_portal</span>
+                    <div class=display-box-heading>
+                        <p>Socials</p>
+                </div>
+                    <button class="button" onclick="window.location.href='https://www.tiktok.com/@javon.265'">Tiktok</button>
+                    <button class="button" onclick="window.location.href='https://www.instagram.com/javo_n265/'">Instagram</button>
+                    <button class="button" onclick="window.location.href='https://twitter.com/jqvon_1'">Twitter</button>
+                    <button class="button" onclick="window.location.href='https://github.com/jqvxz'">GitHub</button>
+                    <button class="button" onclick="window.location.href='https://www.youtube.com/channel/UCKL2Yt1Wr8V1ZjdrHBnjT1A'">Youtube</button>
+                </div>
+            </div>
+
+            <div class="display-container-stack">
+                <div class="display-box">
+                    <span class="material-symbols-outlined">group</span>
+                    <div class=display-box-heading>
+                        <p>Communities</p>
+                </div>
+                    <button class="button" onclick="window.location.href='https://discord.gg/ggnfq7ZEmS'">Gaming Discord</button>
+                    <button class="button" onclick="openTermsPopup()">Programming Discord</button>
+                    <button class="button" onclick="window.location.href='#'">WhatsApp Broadcast</button>
+                </div>
+            </div>
+
+            <div class="display-container-stack">
+                <div class="display-box">
+                    <span class="material-symbols-outlined">download</span>
+                    <div class=display-box-heading>
+                        <p>Download</p>
+                </div>
+                    <button class="button" onclick="openDownloadPopup()">Minecraft Texturepack</button>
+                    <button class="button" onclick="window.location.href='https://github.com/jqvxz/web'">Website Source Code</button>
+                    <button class="button" onclick="window.location.href='#'">Display Uptime</button>
+            </div>
+            
+        </div>
+
+        <dialog id="termsPopup" class="popup">
+            <p style="text-align: center;">Information</p>
+            <p>The Programming Discord server is still in development and will be open to the public soon</p>
+            <button class="button" onclick="closeModal()">Close</button>
+            <button class="button" onclick="window.location.href='https://discord.gg/ggnfq7ZEmS'">Join Gaming Discord</button>
+            <span class="material-symbols-outlined">block</span>
+        </dialog>
+
+        <dialog id="downloadPopup" class="popup">
+            <p style="text-align: center;">Texturepack Download</p>
+            <p>Please select the platform, where you want to download your content from. The Google Drive version is getting updated more frequently</p>
+            <button class="button" onclick="closeDownloadPopup()">Close</button>
+            <button class="button" onclick="window.location.href='https://drive.google.com/drive/folders/1Mk5qLvx36EL7FVWH3Jr15Qgta9iTNJ7_'">Google Drive</button>
+            <button class="button" onclick="window.location.href='https://www.dropbox.com/scl/fi/rloul881x17hy2bzd1ely/Texturepack1.9.zip?rlkey=oawwb7eifikg3mk2n4bny1kpb&dl=0'">Dropbox</button>
+            <button class="button" onclick="window.location.href='#'">Direct Download (soon)</button>
+            <span class="material-symbols-outlined">download</span>
+        </dialog>
+
+</body>
+</html>

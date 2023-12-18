@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>::-webkit-scrollbar {display: none;}</style>
+    <title>Website V6 - Home</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <ul>
+        <li> <a href="home.html">Home</a> </li>
+        <li> <a href="home.html">News</a> </li>
+        <li> <a href="links.html">Links</a> </li>
+        <li> <a href="uptime.html">Uptime</a> </li>
+        <li> <a href="about.html">About</a> </li>
+    </ul>
+
+        <div class="content-box">
+            <div class="intro-text">
+                <p>Welcome to Website V6</p>
+            </div>
+            <div class="display-container">
+
+                <div class="display-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <div class=display-box-heading>
+                        <p>Information</p>
+                    </div>
+                        <p>As part of our commitment to providing a personalized experience, please be aware that this website collects certain information, such as your location, IP address, and device details as well as screen resolution. Rest assured, this data is collected to enhance your user experience, improve security, optimize our services and help the website to handle certain requests correctly. We value your privacy, and you can review our detailed Privacy Policy for a comprehensive understanding of how your information is handled. Please contact us using [email] when you want even further information on what we do with your data and what information is being collected.</p>
+                        <button class="button" onclick="openTermsPopup()">Read terms of use</button>
+                    </div>
+
+                <div class="display-box">
+                    <span class="material-symbols-outlined">dns</span>
+                    <div class=display-box-heading>
+                        <p>Updates</p>
+                    </div>
+                        <p>Welcome to our website! Explore the latest updates on our ongoing projects and conveniently download software or scripts from the dedicated 'Links' tab. Stay informed about the real-time uptime status of all our services, including game servers and websites. As part of our commitment to providing a personalized experience, please be aware that this website collects certain information, such as your location, IP address, and device details. Rest assured, this data is collected to enhance your user experience, improve security, and optimize our services. We value your privacy, and you can review our detailed Privacy Policy for a comprehensive understanding of how your information is handled.</p>
+                        <button class="button">Display services and projects</button>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="content-box-2">
+            <div class="intro-text-stack">
+                <p>Welcome to Website V6</p>
+            </div>
+            <div class="display-container-text">
+
+                <div class="display-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <div class=display-box-heading>
+                        <p>Information</p>
+                    </div>
+                        <p>As part of our commitment to providing a personalized experience, please be aware that this website collects certain information, such as your location, IP address, and device details as well as screen resolution. Rest assured, this data is collected to enhance your user experience, improve security, optimize our services and help the website to handle certain requests correctly. We value your privacy, and you can review our detailed Privacy Policy for a comprehensive understanding of how your information is handled. Please contact us using [email] when you want even further information on what we do with your data and what information is being collected.</p>
+                        <button class="button" onclick="openTermsPopup()">Read terms of use</button>
+                    </div>
+
+                <div class="display-box">
+                    <span class="material-symbols-outlined">dns</span>
+                    <div class=display-box-heading>
+                        <p>Updates</p>
+                    </div>
+                        <p>Welcome to our website! Explore the latest updates on our ongoing projects and conveniently download software or scripts from the dedicated 'Links' tab. Stay informed about the real-time uptime status of all our services, including game servers and websites. As part of our commitment to providing a personalized experience, please be aware that this website collects certain information, such as your location, IP address, and device details. Rest assured, this data is collected to enhance your user experience, improve security, and optimize our services. We value your privacy, and you can review our detailed Privacy Policy for a comprehensive understanding of how your information is handled.</p>
+                        <button class="button">Display services and projects</button>
+                    </div>
+
+            </div>
+        </div>
+            
+        <dialog id="termsPopup" class="popup">
+                <p style="text-align: center;">Terms of use</p>
+                <p>We value your privacy and want to ensure you are aware of our data collection practices. When you visit our website, we automatically collect certain information, including your IP address. This information helps us analyze trends, administer the site, track user movements, and gather demographic information for internal use. Rest assured, we treat your data with the utmost confidentiality and do not share it with third parties unless required by law. Our detailed Privacy Policy provides more information about how we handle your personal information. By continuing to use our website, you consent to the collection of IP-related information as described in our Privacy Policy. If you have any questions or concerns, feel free to contact us.</p>
+                <button class="button" onclick="closeModal()">Accept and exit</button>
+                <button class="button" onclick="window.location.href='about.html'">Read more</button>
+                <button class="button" onclick="exitSite()">Leave the site</button>
+                <span class="material-symbols-outlined">warning</span>
+        </dialog>
+
+</body>
+</html>
