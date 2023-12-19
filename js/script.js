@@ -44,6 +44,6 @@ function exitSite() {
 
 // Feature open about.html (not used)
 
-document.getElementById("aboutButton").addEventListener("click", function() {
-  window.location.href = "about.html";
-});
+//document.getElementById("aboutButton").addEventListener("click", function() {
+//  window.location.href = "about.html";
+//});

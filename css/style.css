@@ -97,7 +97,7 @@ body {
     background-color: rgb(30, 30, 30);
     color: rgb(207, 207, 207);
     font-size: large;
-    max-width: 50%;
+    max-width: 80%;
     text-align: justify;
     animation: enlargeAnimation 0.5s ease-in-out;
     position: relative;
@@ -171,3 +171,9 @@ body {
     100% { transform: scale(1); }
 }
 
+@media screen and (max-width: 767px) {
+    .button {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
