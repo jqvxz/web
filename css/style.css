@@ -117,7 +117,7 @@ body {
     position: relative;
 }
 
-.display-box .material-symbols-outlined {
+.popup .display-box .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
