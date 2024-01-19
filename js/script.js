@@ -42,6 +42,19 @@ function exitSite() {
   window.location.href = 'https://www.google.com';
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Feature open about.html (not used)
 
 //document.getElementById("aboutButton").addEventListener("click", function() {

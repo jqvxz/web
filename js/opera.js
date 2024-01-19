@@ -3,4 +3,3 @@
   if (isOperaGX) {
     window.location.href = "opera.html";
   }
-

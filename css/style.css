@@ -2,11 +2,11 @@
 
 body {
     font-family: Arial;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(198, 203, 226);
 }
 
 .content-box {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(75, 75, 125);
     text-align: center;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -19,7 +19,7 @@ body {
 }
 
 .content-box-2 {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(75, 75, 125);
     text-align: center;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -48,10 +48,10 @@ body {
 }
 
 .display-box {
-    background-color: rgb(30, 30, 30);
+    background-color: #ffffff;
     border-radius: 10px;
     text-align: center;
-    color: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 5px;
@@ -66,7 +66,7 @@ body {
 
 .display-box-heading{
     text-align: center;
-    color: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
     justify-content: center;
     margin-bottom: 5px;
 }
@@ -76,26 +76,27 @@ body {
     color: rgb(207, 207, 207);
     border-radius: 10px;
     border-color: transparent;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     transition: transform 0.3s ease;
-    background-color: rgb(60, 60, 60);
+    background-color: #1857bd;
     margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 .button:hover{
     text-decoration: none;
     border-color: transparent;
     transform: scale(110%);
-    background-color: rgb(70, 70, 70);
 }
 
 .popup{
     border-radius: 10px;
     border-color: transparent;
     border-width: 0;
-    background-color: rgb(30, 30, 30);
-    color: rgb(207, 207, 207);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: large;
     max-width: 80%;
     text-align: justify;
@@ -116,7 +117,7 @@ body {
     position: relative;
 }
 
-.material-symbols-outlined {
+.display-box .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -154,14 +155,15 @@ body {
     margin-left: 2px;
 }
 
-.status-container {
+.status-container-main .status-container .status-container-minecraft .status-container-web {
     display: flex;
     align-items: center;
     justify-content: left;
     text-align: center;
 }
 
-.status-text {
+
+.status-text-main .status-text .status-text-minecraft .status-text-web{
     margin-left: 10px; 
 }
 
@@ -175,5 +177,16 @@ body {
     .button {
         display: block;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .button {
+        width: 100%;
+    }
+
+    .button:hover {
+        transform: scale(104%);
     }
 }

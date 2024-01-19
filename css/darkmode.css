@@ -1,0 +1,49 @@
+/* Dark mode styles */
+
+body.dark-mode {
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 41, 71);
+}
+
+.dark-mode .display-box,
+.dark-mode .display-box-heading,
+.dark-mode .popup {
+    background-color: rgb(30, 30, 30);
+    color: rgb(207, 207, 207);
+}
+
+.dark-mode .dark-box {
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+}
+
+
+body.dark-mode ul {
+    background-color: rgb(30, 30, 30);
+}
+
+body.dark-mode li a {
+    color: rgb(207, 207, 207);
+}
+
+body.dark-mode .active {
+    background-color: #1857bd;
+    color: rgb(207, 207, 207);
+    border-radius: 10px;
+    display: block;
+}
+
+body.dark-mode ul:hover {
+    justify-content: center;
+    border-width: 1px;
+    border-color: red;
+}
+
+
+/* Media queries for dark mode */
+@media screen and (max-width: 767px) {
+    .dark-mode .button:hover {
+        transform: scale(104%);
+    }
+}
+
