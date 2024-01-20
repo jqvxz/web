@@ -13,8 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Save user preference to localStorage
         if (body.classList.contains("dark-mode")) {
             localStorage.setItem("dark-mode", "enabled");
+            console.log('Enabled dark-mode')
         } else {
             localStorage.setItem("dark-mode", "disabled");
+            console.log('disabled dark-mode')
         }
     });
 });

@@ -84,6 +84,7 @@ body {
     margin-right: 5px;
     margin-bottom: 5px;
     display: inline-block;
+    font-size: medium;
 }
 
 .button:hover{
