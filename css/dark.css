@@ -11,7 +11,7 @@
     border-radius: 10px;
     transition: transform 0.3s ease;
     animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    cursor: pointer; /* Add this line to make it clear that it's clickable */
+    cursor: pointer;
 }
 
 .dark-box:hover {
@@ -24,6 +24,5 @@
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
-    justify-content: center;
     display: block;
 }
