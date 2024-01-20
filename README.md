@@ -9,12 +9,14 @@
 ## Log
 
 1. Added javascript popup
-2. Improved design (not the colors)
+2. Improved design
 3. More detailed "about.html"
 4. Short loading times -> No images
 5. Added icons
+6. Added value storing for dark mode
+7. Added dark mode switch
+8. Added colors
 
 ## FAQ
 
 1. "Why does the website requests my ip" - To analyze the website visitors home country and improve loading times
-2. "Why are the colors so ugly" - I don't know
