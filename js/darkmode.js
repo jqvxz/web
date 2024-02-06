@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log('Enabled dark-mode')
         } else {
             localStorage.setItem("dark-mode", "disabled");
-            console.log('disabled dark-mode')
+            console.log('Disabled dark-mode')
         }
     });
 });

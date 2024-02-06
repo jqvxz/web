@@ -1,5 +1,5 @@
 /* CSS to manage navbar */
-/* Adding mobile version soon */
+/* Remember: Adding mobile version soon */
 
 ul {
   list-style-type: none;
@@ -13,6 +13,7 @@ ul {
   border-radius: 10px;
   transition: transform 0.3s ease;
   animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  overflow-x: auto
 }
   
 li {
@@ -46,3 +47,9 @@ ul:hover{
   100% { transform: scale(1); }
 }
 
+@media (max-width: 600px) {
+  .navbar-container {
+    width: 100%; /* Full width for small screens */
+    overflow-x: auto;
+  }
+}

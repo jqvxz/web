@@ -85,12 +85,16 @@ body {
     margin-bottom: 5px;
     display: inline-block;
     font-size: medium;
+    transition: 0.32864518s;
+    
 }
 
 .button:hover{
     text-decoration: none;
     border-color: transparent;
     transform: scale(110%);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 0 20px 0 #555555;
+    transition: 0.32864518s;
 }
 
 .popup{
