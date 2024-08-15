@@ -17,6 +17,10 @@ html {
     background-color: #5e5e5e56;
 }
 */
+
+.dark-mode {
+    background-image: url(bg-dark.jpg);
+}
 /* Navbar */
 .nav {
     overflow: hidden;
