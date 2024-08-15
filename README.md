@@ -2,7 +2,7 @@
 
 ## Information
 
-1. Website version is V.7-pre
+1. Website version is V.7-pre2
 2. Contact me if there are issues
 
 ## Log
