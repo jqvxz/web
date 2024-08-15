@@ -14,24 +14,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Dark Mode
-
 document.addEventListener("DOMContentLoaded", function () {
     const darkBox = document.getElementById("darkBox");
-    const body = document.body;
+    const html = document.documentElement; // Target the entire document
 
     // Check if the user has a preference stored
     const isDarkModeEnabled = localStorage.getItem("darkMode") === "true";
     if (isDarkModeEnabled) {
-        body.classList.add("dark-mode");
+        html.classList.add("dark-mode");
     }
 
     // Toggle dark mode on dark-box click
     darkBox.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-        
+        html.classList.toggle("dark-mode");
+
         // Save user preference to localStorage
-        const isDarkModeEnabled = body.classList.contains("dark-mode");
+        const isDarkModeEnabled = html.classList.contains("dark-mode");
         localStorage.setItem("darkMode", isDarkModeEnabled ? "true" : "false");
     });
 });
