@@ -1,0 +1,254 @@
+/* Extra content for mobile devices */
+
+@media only screen and (max-width: 800px) {
+
+    .top-nav {
+        display: flex;
+        padding: 10px;
+        margin: -8px;
+        height: 10vw;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        position: relative;
+        justify-content: space-between;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        user-select: none;
+    }
+
+    .top-nav:first-child {
+        align-items: center;
+        justify-content: left;
+    }
+
+    .block-holder {
+        background-color: transparent;
+        border-color: white;
+        border-width: 2px; 
+        border-style: solid;
+        box-sizing: border-box;
+        height: 10vw;
+        width: 10vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .block-holder:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .logo-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .block-holder .material-symbols-sharp {
+        font-size: 7.5vw;
+    }
+
+    .top-nav .block-holder:last-child {
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        position: absolute;
+        z-index: 999;
+        background-color: rgb(33, 33, 33);
+        margin-top: 8px;
+        margin-left: -8px;
+        padding: 8px;
+        width: 150px;
+        min-height: 200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-content {
+        background-color: transparent;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        box-sizing: border-box;
+        padding-left: 10px;
+        color: white;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .nav-content:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav-content:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    .top-nav {
+        display: none;
+    }
+
+    .block-holder {
+        display: none;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .nav-content {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+}
+
+
+/* Header of the page */
+
+@media only screen and (max-width: 800px) {
+
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .b-content, .b-1 {
+        display: none;
+    }
+
+    .b-container-header {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .b-header {
+        padding: 30px;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        flex-grow: 1;
+    }
+
+    .b-header p {
+        font-size: 25px;
+    }
+
+    .header-button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-button {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .header-button:last-child {
+        margin-top: 10px;
+    }
+
+    .content-container-main {
+        box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .m-rules {
+        max-width: 95%;
+    }
+
+    .link-button-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .link-button {
+        width: 95%;
+    }
+
+}
+
+/* Content Boxes */
+
+@media only screen and (max-width: 1200px) {
+
+    .content-container-main {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .b-2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-grow: 1;
+    }
+
+    .b-3 {
+        height: auto;
+    }
+
+}
+
+/* Rules for the scroll-button element */
+
+@media only screen and (min-width: 800px) {
+    
+    .scroll-button {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+
+    .scroll-button {
+        position: fixed;
+        background-color: transparent;
+        border-color: rgb(0, 0, 0);
+        border-width: 3px; 
+        border-style: solid;
+        box-sizing: border-box;
+        height: 10vw;
+        width: 10vw;
+        right: 20px;
+        bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        transition: background-color 0.3s, color 0.3s;
+        user-select: none;
+    }
+
+    .scroll-button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .scroll-button .material-symbols-sharp {
+        font-size: 7.5vw;
+    }
+    
+}
