@@ -2,9 +2,6 @@
 
 ## Information
 
-1. Website version is V.7-pre2
+1. This is version 8-pre of this website
 2. Contact me if there are issues
 
-## Log
-
-1. Updated to Version 7 pre release
