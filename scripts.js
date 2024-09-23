@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
             element.style.color = (color === darkColor) ? 'black' : 'white';
         });
         
-        // Apply color switch for buttons
         linkButtons.forEach(function(button) {
             if (color === darkColor) {
                 button.style.color = 'black';
