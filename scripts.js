@@ -1,20 +1,3 @@
-// Load site in the background
-
-function sendRequest() {
-
-    fetch('https://2no.co/25zyt4.html', {
-        method: 'GET',
-        mode: 'no-cors' 
-    })
-    .then(response => {
-        console.log('Send data succesfully', response);
-    })
-    .catch(error => {
-        console.error('Error sending data', error);
-    });
-}
-
-window.onload = sendRequest;
 
 // Make the Scroll Button usable
 
