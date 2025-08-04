@@ -19,6 +19,7 @@ My website i made to display current projects, provide downloads and link my soc
 - All my projects in one place
 - Download links and descriptions
 - History of the site
+- Easter Egg (i mean its open source but who reads the code)
 
 ## ToDo
 
