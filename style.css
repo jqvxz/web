@@ -1,4 +1,4 @@
-/* ADDED: This enables smooth scrolling for the entire page */
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,7 +18,6 @@ a {
     text-decoration: none;
 }
 
-/* --- SIDEBAR STYLES --- */
 .sidebar {
     position: fixed;
     top: 20px;
@@ -35,7 +34,6 @@ a {
     flex-direction: column;
 }
 
-/* --- SIDEBAR NAVIGATION --- */
 .sidebar-nav {
     display: flex;
     flex-direction: column;
@@ -85,7 +83,6 @@ a {
     padding-bottom: 20px; 
 }
 
-/* --- LANDING PAGE STYLES --- */
 .landing-page {
     min-height: 100vh;
     display: flex;
@@ -97,9 +94,8 @@ a {
     overflow: hidden;
 }
 
-/* --- UPDATED: Decorative Line Styles --- */
 .decorative-line {
-    position: absolute; /* Positioned relative to the .landing-page */
+    position: absolute;
     height: 3px;
     background-color: #E0E0E0;
     z-index: -1;
@@ -107,14 +103,13 @@ a {
 }
 
 .decorative-line-low {
-    position: absolute; /* Positioned relative to the .landing-page */
+    position: absolute; 
     height: 3px;
     background-color: #E0E0E0;
     z-index: -1;
     border-radius: 3px;
 }
 
-/* Final positions and widths for the lines */
 #line1 {
     top: 15%;
     right: 0;
@@ -214,7 +209,6 @@ a {
 }
 
 
-/* --- IMAGE GALLERY STYLES --- */
 .content-area {
     display: grid;
     grid-template-columns: repeat(3, max-content); 
@@ -322,7 +316,6 @@ a {
     border-color: rgba(255, 255, 255, 0.25);
 }
 
-/* --- SHOWCASE SECTION STYLES --- */
 .showcase-section {
     min-height: 100vh;
     display: flex;
@@ -370,7 +363,6 @@ a {
 }
 
 
-/* --- HISTORY SECTION STYLES --- */
 .history-section {
     min-height: 100vh;
     display: flex;
@@ -389,16 +381,15 @@ a {
     max-width: 1700px; 
 }
 
-/* --- UPDATED: History Card Styles --- */
 .history-card {
     background-color: #0f0f0f; 
     border-radius: 16px;
     overflow: hidden;
     width: 100%;
-    max-width: 540px; /* Matched to .card */
+    max-width: 540px; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    display: flex; /* Added to control layout */
-    flex-direction: column; /* Added to stack image and content */
+    display: flex; 
+    flex-direction: column; 
     transform-style: preserve-3d; 
 }
 
@@ -406,16 +397,14 @@ a {
     width: 100%;
     display: block;
     object-fit: cover;
-    /* Removed aspect-ratio to match .card's image behavior */
 }
 
 .history-card-content {
-    /* This now acts as the content area below the image, similar to .card-content */
     padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1; /* Allows the content area to fill available space */
+    flex-grow: 1; 
 }
 
 .history-card-content h4 {
@@ -431,7 +420,6 @@ a {
     margin: 0;
 }
 
-/* Timeline styles */
 .timeline-container {
     width: 100%;
     max-width: 1700px;
@@ -474,7 +462,6 @@ a {
 }
 
 
-/* --- PROFESSIONAL SCROLL-IN ANIMATION --- */
 .intro-card,
 .social-card,
 .contact-card,

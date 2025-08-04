@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Dynamic Navigation Highlighting on Scroll ---
     const sections = document.querySelectorAll('header[id], main[id], section[id]');
     const navLinks = document.querySelectorAll('.sidebar-nav .nav-btn');
 
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    // --- Card Button Toggle Functionality ---
     const toggleButtons = document.querySelectorAll('.btn-toggle-info');
 
     toggleButtons.forEach(button => {
@@ -48,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3D Tilt Effect for Cards (no card flip anymore) ---
     const tiltableCards = document.querySelectorAll('.card, .intro-card, .large-card, .social-card, .contact-card, .history-card');
 
     tiltableCards.forEach(card => {
@@ -78,18 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('mouseleave', onMouseLeave);
     });
 
-    // --- Scroll-Triggered Fade-In Animation ---
     const animatedElements = document.querySelectorAll(
         '.intro-card, .social-card, .contact-card, .card, .large-card, .history-card, .timeline-container, .decorative-line, .decorative-line-low'
     );
 
     const fadeInObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            // If the element is in the viewport, add the 'is-visible' class
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
             } 
-            // Otherwise, remove it so the animation can happen again
             else {
                 entry.target.classList.remove('is-visible');
             }
@@ -111,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (clickTimestamps.length >= 3) {
                 alert("\n\n I miss u E...");
-                clickTimestamps = []; // reset after alert
+                clickTimestamps = [];
             }
         });
     }
